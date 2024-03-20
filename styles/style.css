@@ -12,7 +12,7 @@ body{
     justify-content: center;
     height: 100vh;
     width: 100vw;
-    background-image:linear-gradient(to bottom, rgb(48, 182, 226), rgb(155, 217, 238))
+    background-image:linear-gradient(to bottom, rgb(48, 182, 226), rgb(140, 215, 240))
 }
 #container{
     display: flex;
@@ -25,11 +25,11 @@ body{
 #calculator{
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 7px black;
     gap: 2rem;
     padding: 2rem;
-    background-color: rgba(5, 107, 224, 0.582);
-    color: rgb(48, 182, 226);
+    background-image: linear-gradient(to bottom, rgba(48, 181, 226, 0.575), rgba(155, 217, 238, 0.815));
+    color: rgb(113, 202, 243);
     border-radius: 10px;
 }
 #form{
@@ -40,11 +40,12 @@ body{
 #title{
     font-size: 2em;
     position: relative;
+    text-shadow: 0px 0px 7px rgba(0, 1, 29, 0.842);
 }
 #title::after{
     position: absolute;
     content: "";
-    background-color: rgb(48, 182, 226);
+    background-color: rgb(75, 192, 247);
     width: 8rem;
     height: 3px;
     bottom: 0;
@@ -54,7 +55,7 @@ body{
 .input-box label{
     font-size: 1.5em;
     font-weight: 500;
-
+    text-shadow: 0px 0px 7px rgba(0, 1, 29, 0.842);
 }
 .input-field{
     display: flex;
@@ -64,10 +65,11 @@ body{
     padding: 0.2rem;
     border-radius: 3px;
     margin-top: 3px;
+    color: rgb(75, 192, 247);
 }
 .input-field span,
 .input-field i {
-    color: rgb(0, 114, 167);
+    color: rgb(75, 192, 247);
     font-size: 1.5em;
     padding: 0.6rem 1rem;
 }
@@ -78,7 +80,12 @@ body{
     font-size: 1.3rem;
     color: rgb(48, 182, 226);
     padding: 0 0.5rem;
-
+}
+#weight::placeholder{
+    color: rgba(75, 193, 247, 0.479);
+}
+#height::placeholder{
+    color:rgba(75, 193, 247, 0.479);
 }
 /*os elementos a seguir tem fito de remover o contador exibido pelo browser*/
 .input-field input::-webkit-outer-spin-button,
@@ -98,12 +105,12 @@ body{
     padding: 0.5rem;
     border-radius: 5px; 
     cursor: pointer;
-    transition: 1s;
+    transition: .5s;
 }
 #botao:hover{
     background-color: rgb(30, 169, 216);
     padding: 10px;
-    color: rgb(20, 20, 241);
+    color: rgb(56, 56, 238);
     box-shadow: 0px 0px 10px rgba(101, 101, 250, 0.507);
 }
 #resultado{
@@ -122,13 +129,13 @@ body{
 /*O elemento a seguir tem o fito de aplicar as alterações apenas na fonte do ultimo span*/
 #bmi span:last-child{
     font-size: 0.875rem;
-    color: aqua;
+    color: rgb(0, 114, 167);
 }
 #description{
     width: 15.5rem;
 }
 #more_info{
-    border-top: 1px solid aqua;
+    border-top: 1px solid rgb(0, 153, 255);
     padding-top: 1.5rem;
 }
 #more_info a{
@@ -146,4 +153,27 @@ body{
 }
 .hidden{
     display: none;
+}
+.normal{
+    color: aquamarine;
+}
+.attention{
+    color: red;
+}
+@media screen and (max-width: 1024){
+    #img{
+        display: none ;
+    }
+}
+@media screen and (max-width: 500px){
+    #container{
+        width: 100%;
+        height: 100%;
+    }
+}
+#calculator {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    justify-content: center;
 }
