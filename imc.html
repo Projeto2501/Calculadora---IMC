@@ -9,45 +9,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <main id="container">
         <section id="img">
-            <img src="imagens/personaltr.png" alt="">
+            <img src="imagens/personaltr.png" alt="Desenho de bonecos segurando halteres">
         </section>
         <section id="calculator">
             <form id="form">
                 <h1 id="title">
                     Calculadora - IMC
                 </h1>
+
                 <div class="input-box">
                     <label for="weight">
-                        Peso
+                        Peso em Kg
                     </label>
                     <div class="input-field">
                         <span class="material-symbols-outlined">
                             weight
                             </span>
                         <input type="number" id="weight" placeholder="Insira seu peso" required>
-                        <span>Kg</span>
+                        <span>
+                            Kg
+                        </span>
                     </div>
                 </div>
 
                 <div class="input-box">
                     <label for="height">
-                        Altura
+                        Altura em Metros
                     </label>
                     <div class="input-field">
                         <span class="material-symbols-outlined">
                             height
                             </span>
-                        <input type="number" id="height" placeholder="Insira sua altura" required>
-                        <span>Metros</span>
+                        <input type="number" id="height" placeholder="Insira sua altura" step="0.01" required>
+                        <span>
+                            Metro
+                        </span>
                     </div>
                 </div>
-                <button id="botao">Calcular</button>
+                <button id="botao">
+                    Calcular
+                </button>
             </form>
+
             <div id="infos">
                 <div id="result">
                     <div id="bmi">
@@ -59,7 +67,9 @@
                     </div>
                 </div>
                 <div id="more_info" class="hidden">
-                    <a href="lemonparty.com">Mais Informações</a>
+                    <a href="#">
+                        Mais Informações
+                    </a>
                     <span class="material-symbols-outlined">
                         add_link
                         </span>
