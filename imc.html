@@ -1,82 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora IMC</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
     <main id="container">
-        <section id="img">
-            <img src="imagens/personaltr.png" alt="Desenho de bonecos segurando halteres">
-        </section>
-        <section id="calculator">
-            <form id="form">
-                <h1 id="title">
-                    Calculadora - IMC
-                </h1>
+      <section id="img">
+        <img
+          src="imagens/personaltr.png"
+          alt="Desenho de bonecos segurando halteres"
+        />
+      </section>
+      <section id="calculator">
+        <form id="form">
+          <h1 id="title">Calculadora - IMC</h1>
 
-                <div class="input-box">
-                    <label for="weight">
-                        Peso em Kg
-                    </label>
-                    <div class="input-field">
-                        <span class="material-symbols-outlined">
-                            weight
-                            </span>
-                        <input type="number" id="weight" placeholder="Insira seu peso" required>
-                        <span>
-                            Kg
-                        </span>
-                    </div>
-                </div>
-
-                <div class="input-box">
-                    <label for="height">
-                        Altura em Metros
-                    </label>
-                    <div class="input-field">
-                        <span class="material-symbols-outlined">
-                            height
-                            </span>
-                        <input type="number" id="height" placeholder="Insira sua altura" step="0.01" required>
-                        <span>
-                            Metro
-                        </span>
-                    </div>
-                </div>
-                <button id="botao">
-                    Calcular
-                </button>
-            </form>
-
-            <div id="infos">
-                <div id="result">
-                    <div id="bmi">
-                        <span id="value"></span>
-                        <span>Seu IMC</span>
-                    </div>
-                    <div id="description">
-                        <span></span>
-                    </div>
-                </div>
-                <div id="more_info" class="hidden">
-                    <a href="#">
-                        Mais Informações
-                    </a>
-                    <span class="material-symbols-outlined">
-                        add_link
-                        </span>
-                </div>
+          <div class="input-box">
+            <label for="weight"> Peso em Kg </label>
+            <div class="input-field">
+              <span class="material-symbols-outlined"> weight </span>
+              <input
+                type="number"
+                id="weight"
+                placeholder="Insira seu peso"
+                required
+              />
+              <span> Kg </span>
             </div>
-        </section>
+          </div>
+
+          <div class="input-box">
+            <label for="height"> Altura em Metros </label>
+            <div class="input-field">
+              <span class="material-symbols-outlined"> height </span>
+              <input
+                type="number"
+                id="height"
+                placeholder="Insira sua altura"
+                step="0.01"
+                required
+              />
+              <span> Metro </span>
+            </div>
+          </div>
+          <button id="botao">Calcular</button>
+        </form>
+
+        <div id="infos">
+          <div id="result">
+            <div id="bmi">
+              <span id="value"></span>
+              <span>Seu IMC</span>
+            </div>
+            <div id="description">
+              <span></span>
+            </div>
+          </div>
+          <div id="more_info" class="hidden">
+            <a href="#"> Mais Informações </a>
+            <span class="material-symbols-outlined"> add_link </span>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

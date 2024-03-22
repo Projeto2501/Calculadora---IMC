@@ -1,184 +1,192 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap");
 
-*{
-    margin:0px;
-    padding: 0px;
-    font-family: "Belanosima", sans-serif;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Belanosima", sans-serif;
+  box-sizing: border-box;
 }
-:root{
-    --cor_principal: rgba(33, 191, 244, 0.642);
-    --cor_secundaria: rgba(1, 119, 158, 0.575);
-    --cor_terciaria: rgb(11, 90, 119);
+:root {
+  --cor_principal: rgba(33, 191, 244, 0.642);
+  --cor_secundaria: rgba(1, 119, 158, 0.575);
+  --cor_terciaria: rgb(11, 90, 119);
 }
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
-    background-image:linear-gradient(to bottom, var(--cor_principal), var(--cor_terciaria));
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+    to bottom,
+    var(--cor_principal),
+    var(--cor_terciaria)
+  );
 }
-#container{
-    display: flex;
-    align-items: center;
-    gap: 3.5rem;
+#container {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
 }
-#img img{
-    width: 32rem;
+#img img {
+  width: 32rem;
 }
-#calculator{
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0px 0px 7px var(--cor_terciaria);
-    gap: 2rem;
-    padding: 2rem;
-    background-image: linear-gradient(to bottom, rgba(48, 181, 226, 0.575),var(--cor_secundaria));
-    color: rgb(113, 202, 243);
+#calculator {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 7px var(--cor_terciaria);
+  gap: 2rem;
+  padding: 2rem;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(48, 181, 226, 0.575),
+    var(--cor_secundaria)
+  );
+  color: rgb(113, 202, 243);
 }
-#form{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-#title{
-    font-size: 2em;
-    position: relative;
-    text-shadow: 0px 0px 7px var(--cor_terciaria);
+#title {
+  font-size: 2em;
+  position: relative;
+  text-shadow: 0px 0px 7px var(--cor_terciaria);
 }
-#title::after{
-    position: absolute;
-    content: "";
-    background-color: rgb(75, 192, 247);
-    width: 8rem;
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    border-radius: 3px;
+#title::after {
+  position: absolute;
+  content: "";
+  background-color: rgb(75, 192, 247);
+  width: 8rem;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  border-radius: 3px;
 }
-.input-box label{
-    font-size: 1.5em;
-    font-weight: 500;
-    text-shadow: 0px 0px 7px var(--cor_terciaria);
+.input-box label {
+  font-size: 1.5em;
+  font-weight: 500;
+  text-shadow: 0px 0px 7px var(--cor_terciaria);
 }
-.input-field{
-    display: flex;
-    background-color: rgba(11, 20, 151, 0.637);
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.2rem;
-    border-radius: 3px;
-    margin-top: 3px;
-    color: rgb(75, 192, 247);
+.input-field {
+  display: flex;
+  background-color: rgba(11, 20, 151, 0.637);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2rem;
+  border-radius: 3px;
+  margin-top: 3px;
+  color: rgb(75, 192, 247);
 }
 .input-field span,
 .input-field i {
-    color: rgb(75, 192, 247);
-    font-size: 1.5em;
-    padding: 0.6rem 1rem;
+  color: rgb(75, 192, 247);
+  font-size: 1.5em;
+  padding: 0.6rem 1rem;
 }
-.input-field input{
-    background-color: transparent;
-    border: none;
-    width: 100;
-    font-size: 1.3rem;
-    color: rgb(48, 182, 226);
-    padding: 0 0.5rem;
+.input-field input {
+  background-color: transparent;
+  border: none;
+  width: 100;
+  font-size: 1.3rem;
+  color: rgb(48, 182, 226);
+  padding: 0 0.5rem;
 }
-#weight::placeholder{
-    color: rgba(75, 193, 247, 0.479);
+#weight::placeholder {
+  color: rgba(75, 193, 247, 0.479);
 }
-#height::placeholder{
-    color:rgba(75, 193, 247, 0.479);
+#height::placeholder {
+  color: rgba(75, 193, 247, 0.479);
 }
 /*os elementos a seguir tem fito de remover o contador exibido pelo browser*/
 .input-field input::-webkit-outer-spin-button,
-.input-field input::-webkit-inner-spin-button{
-    appearance: none;
+.input-field input::-webkit-inner-spin-button {
+  appearance: none;
 }
 /*o elemento a seguir retira a "borda" criada pelo browser ao clicar em um input*/
-.input-field input:focus{
-    outline: none;
+.input-field input:focus {
+  outline: none;
 }
-#botao{
-    border: none;
-    font-size: 1.25rem;
-    font-weight: lighter;
-    background-color: rgb(48, 182, 226);
-    color: rgb(0, 114, 167);
-    padding: 0.5rem;
-    border-radius: 5px; 
-    cursor: pointer;
-    transition: .5s;
+#botao {
+  border: none;
+  font-size: 1.25rem;
+  font-weight: lighter;
+  background-color: rgb(48, 182, 226);
+  color: rgb(0, 114, 167);
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
 }
-#botao:hover{
-    background-color: rgb(30, 169, 216);
-    padding: 10px;
-    color: rgb(56, 56, 238);
-    box-shadow: 0px 0px 10px rgba(101, 101, 250, 0.507);
+#botao:hover {
+  background-color: rgb(30, 169, 216);
+  padding: 10px;
+  color: rgb(56, 56, 238);
+  box-shadow: 0px 0px 10px rgba(101, 101, 250, 0.507);
 }
-#resultado{
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    border-top: 1px solid lightblue;
-    padding: 0.75rem;
+#resultado {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  border-top: 1px solid lightblue;
+  padding: 0.75rem;
 }
-#bmi{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-size: 2.25rem;
+#bmi {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2.25rem;
 }
 /*O elemento a seguir tem o fito de aplicar as alterações apenas na fonte do ultimo span*/
-#bmi span:last-child{
-    font-size: 0.875rem;
-    color: rgb(0, 114, 167);
+#bmi span:last-child {
+  font-size: 0.875rem;
+  color: rgb(0, 114, 167);
 }
-#description{
-    width: 15.5rem;
+#description {
+  width: 15.5rem;
 }
-#more_info{
-    border-top: 1px solid rgb(0, 153, 255);
-    padding-top: 1.5rem;
+#more_info {
+  border-top: 1px solid rgb(0, 153, 255);
+  padding-top: 1.5rem;
 }
-#more_info a{
-    color: blue;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    gap: 0.3rem;
-    font-size: 0.875rem;
-    text-decoration: none;
-    transition: 0.5s;
+#more_info a {
+  color: blue;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 0.3rem;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: 0.5s;
 }
-#more_info a:hover{
-    color: lightblue;
+#more_info a:hover {
+  color: lightblue;
 }
-.hidden{
+.hidden {
+  display: none;
+}
+.normal {
+  color: aquamarine;
+}
+.attention {
+  color: red;
+}
+@media screen and (max-width: 1024) {
+  #img {
     display: none;
+  }
 }
-.normal{
-    color: aquamarine;
-}
-.attention{
-    color: red;
-}
-@media screen and (max-width: 1024){
-    #img{
-        display: none ;
-    }
-}
-@media screen and (max-width: 500px){
-    #container{
-        width: 100%;
-        height: 100%;
-    }
-}
-#calculator {
+@media screen and (max-width: 500px) {
+  #container {
     width: 100%;
     height: 100%;
-    border-radius: 0;
-    justify-content: center;
+  }
+}
+#calculator {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  justify-content: center;
 }
